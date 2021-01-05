@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+for size in 10, 100
+do 
+    exec mpirun -np 4 ./test_mpi.exe $size &
+done
+
